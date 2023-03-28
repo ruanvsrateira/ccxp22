@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: #FFD900;
+}
+
+header img {
+    margin-left: 40px;
+    width: 150px;
+}
+
+section.information-event-sec {
+    display: flex;
+    font-family: "Verdana";
+    text-align: center;
+}
+
+section.information-event-sec div {
+    width: 40%;
+}
+
+section.information-event-sec > div:first-child {
+    background: #514988;
+}
+
+section.information-event-sec > div:first-child h1 {
+    font-size: 40px;
+    color: #F3C61F;
+    margin-top: 30px;
+}
+
+section.information-event-sec div:first-child h2 {
+    font-size: 20px;
+    color: #FFF;
+}
+
+section.information-event-sec div:first-child p {
+    margin-bottom: 30px;
+    max-width: 80%;
+    margin: 40px auto 40px auto;
+    font-size: 20px;
+    font-family: "Verdana";
+    color: #FFF;
+}
+
+section.information-event-sec div:last-child {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer {
+    width: 80% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.timer h1 { 
+    color: #514988;
+    font-size: 40px;
+}
+
+
+section.information-event-sec div:last-child p {
+    color: #E33881;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+section.information-event-sec div:last-child video {
+    margin-top: 20px;
+    width: 90%;
+}
+
+section.tickets-sec {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.tickets-sec p{
+    color: #F3C61F;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.card-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-container-title {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.cards img {
+    width: 170px;
+}
+
+
+
+button {
+    width: 400px;
+    height: 100px;
+    background-color: #514988;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+button:hover {
+    background-color: #FFF;
+    transition: 100ms;
+    border: 2px solid #514988;
+    color: #514988;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .information-event-sec {
+        flex-direction: column;
+    }
+
+    .information-event-sec div {
+        width: 100vw !important;
+    }
+
+    .tickets-sec {
+        margin-top: 20px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1158px) {
+
+    .tickets-sec {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+
+    
+    .cards {
+        display: flex;
+        justify-content: center !important;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
