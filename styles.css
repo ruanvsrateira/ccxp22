@@ -173,6 +173,24 @@ button:hover {
         display: flex;
         justify-content: center !important;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 10px
+    }
+}
+
+@media only screen and (max-width: 530px) {
+
+    .information-event-sec div:last-child .timer  {
+        flex-wrap: wrap;
+    }
+
+    .information-event-sec div:last-child  p {
+        margin-top: 15px;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1365px) {
+    .information-event-sec div:first-child p{
+        font-size: 25px !important;
     }
 }

@@ -2,9 +2,18 @@ const day = document.getElementById("day")
 const hour = document.getElementById("hour")
 const minute = document.getElementById("minute")
 const second = document.getElementById("second")
+const player = document.querySelector("video")
+const body = document.querySelector("body")
+
+player.addEventListener("mouseover", () => {
+    player.setAttribute("controls", true)
+})
+
+player.addEventListener("mouseout", () => {
+    player.setAttribute("controls", false)
+})
 
 let lancament = "23 oct 2024"
-
 
 function countDown() {
     const lancamentDate = new Date(lancament)
